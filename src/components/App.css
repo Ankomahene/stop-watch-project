@@ -1,0 +1,119 @@
+.parent {
+  background: #FF512F;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DD2476, #FF512F);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DD2476, #FF512F);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 40%;
+  height: 350px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
+}
+
+.heading {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(116, 32, 70);
+  color: rgb(255, 255, 255);
+  border-radius: 5px 5px 0 0;
+  margin: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+
+.timer {
+  font-family: 'Teko', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  padding: 30px 0px;
+}
+
+.hour,
+.min,
+.sec,
+.msec {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: rgb(63, 21, 40);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 5px;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.action button {
+  width: 70px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(63, 21, 40);
+  margin: 2px;
+  transition: all .5s;
+}
+
+.action button:hover {
+  box-shadow: 2px 3px 3px rgba(27, 26, 26, 0.5);
+  cursor: pointer;
+}
+
+#start {
+  height: 70px;
+  border-radius: 50%;
+  background: -webkit-linear-gradient(to right, rgb(131, 23, 71), rgb(141, 49, 30));
+  background: linear-gradient(to right, rgb(131, 23, 71), rgb(141, 49, 30));
+}
+
+#stop,
+#reset {
+  width: 100px;
+  padding: 5px 0px;
+  border-radius: 20px;
+}
+
+#stop {
+  background-color: rgb(131, 23, 71);
+}
+
+#reset {
+  background-color: rgb(131, 23, 71);
+}
+
+@media(max-width: 800px) {
+  .main {
+    width: 60%;
+  }
+}
+
+@media(max-width: 630px) {
+  .main {
+    width: 70%;
+  }
+}
+
+@media(max-width: 505px) {
+  .main {
+    width: 90%;
+  }
+}
